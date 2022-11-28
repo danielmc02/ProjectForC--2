@@ -32,9 +32,7 @@ public:
 	void setCourseUnits(int);
 	void setPrereqs(std::set<int>,int);
 	// Destructor
-	~Course()
-	{
-	};
+	~Course();
 private:
 	int courseNumber;
 	std::string courseName;

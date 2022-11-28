@@ -91,3 +91,5 @@ const string Course::PREFIX = "CS A";
 		
 	}
 
+Course::~Course(){}
+
