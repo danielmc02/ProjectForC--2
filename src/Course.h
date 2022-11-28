@@ -12,14 +12,14 @@ class Course
 {
 public:
 	// Default Constructor
-	Course() : courseNumber(0), courseName("N/A"), courseUnits(0), prereqs({0}) {}	
+	Course() : courseNumber(0), courseName("N/A"), courseUnits(0), prereqs({0,0}) {}	
 	// Overload Constructor
 	Course(int courseNumberParam, std::string courseNameParam,
 	int numberOfUnitsParam, std::set<int> preRequisitesParam) :
 	courseNumber(courseNumberParam), courseName(courseNameParam),
 	courseUnits(numberOfUnitsParam), prereqs(preRequisitesParam) {} 
 	// Accessor functions
-	string getCourseName();
+	std::string getCourseName() const;
 
 	// Mutator functions
 

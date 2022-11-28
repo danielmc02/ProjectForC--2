@@ -15,7 +15,7 @@ const string Course::PREFIX = "CS A";
 // Definition function getCourseNumber
 
 // Definition function getCourseName
-	string getCourseName()
+	string Course::getCourseName() const
 	{
 		return this->courseName;
 	}
