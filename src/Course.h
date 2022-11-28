@@ -20,11 +20,21 @@ public:
 	courseUnits(numberOfUnitsParam), prereqs(preRequisitesParam) {} 
 	// Accessor functions
 	std::string getCourseName() const;
+	int getCourseNumber();
+	int getCourseUnits();
+	std::set<int> getCoursePrereqs() const;
+	Course getCourse() const;
+	static std::string getPrefix();
 
 	// Mutator functions
-
+	void setCourseName(std::string);
+	void setCourseNumber(int);
+	void setCourseUnits(int);
+	void setPrereqs(std::set<int>,int);
 	// Destructor
-
+	~Course()
+	{
+	};
 private:
 	int courseNumber;
 	std::string courseName;
